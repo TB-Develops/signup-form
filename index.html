@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div id="container">
+        <div class="signup__left">
+            <div class="logo__container">
+                <!-- <img src="./Assets/LOGO.png" alt="logo"> -->
+                <h1>iSPACE</h1>
+            </div>
+        </div>
+        <div class="signup__right">
+            <div class="signup__inform">
+                <b>This is not a real service!</b>
+                <h2>SIGN UP NOW!</h2>
+                <p>Join a community of investors and grow your wisdom and wealth.</p>
+            </div>
+                <form action="/sign-up" method="post">
+                    <div class="signup__form">
+                        <label for="sign-up">Sign Up</label>
+                        <div class="signup__name">
+                            <div>
+                                <label for="firstName">First Name</label>
+                                <input type="text"  id="firstName" placeholder="John" name="firstName">
+                            </div>
+                            <div>
+                                <label for="lastName">Last Name</label>
+                                <input type="text"  id="lastName" placeholder="Doe" name="lastName">
+                            </div>
+                        </div>
+                        <div class="signup__contact-info">
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email"  id="email" placeholder="example@domain.com" name="email">
+                            </div>
+                            <div>
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="number"  id="phoneNumber" placeholder="555-555-555" name="phone_number">
+                            </div>
+                        </div>
+                        <div class="signup__password">
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password"  id="password" placeholder="password" >
+                            </div>
+                            <div>
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password"  id="confirmPassword" placeholder="confirm password" name="password">
+                            </div>
+                        </div>
+                    <button type="submit" class="signup__button">Create Account</button>
+                    <p>Already have an account?</p><span><b>Log In</b></span>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
