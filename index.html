@@ -11,7 +11,9 @@
     <div id="container">
         <div class="signup__left">
             <div class="logo__container">
-                <!-- <img src="./Assets/LOGO.png" alt="logo"> -->
+                <div class="signup__logo">
+                    
+                </div>
                 <h1>iSPACE</h1>
             </div>
         </div>
@@ -23,39 +25,44 @@
             </div>
                 <form action="/sign-up" method="post">
                     <div class="signup__form">
-                        <label for="sign-up">Sign Up</label>
-                        <div class="signup__name">
-                            <div>
-                                <label for="firstName">First Name</label>
-                                <input type="text"  id="firstName" placeholder="John" name="firstName">
+                        <div class="signup__title">
+                            <label for="sign-up">Sign Up</label>
+                        </div>
+                        <div class="signup__content">
+                            <div class="signup__content-left">
+                                <div>
+                                    <label for="firstName">First Name <span class="ast">*</span></label>
+                                    <input type="text"  id="firstName" placeholder="John" name="firstName" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email<span class="ast">*</span></label>
+                                    <input type="email"  id="email" placeholder="example@domain.com" name="email" required>
+                                </div>
+                                <div>
+                                    <label for="password">Password<span class="ast">*</span></label>
+                                    <input type="password"  id="password" placeholder="password" required >
+                                </div>
                             </div>
-                            <div>
-                                <label for="lastName">Last Name</label>
-                                <input type="text"  id="lastName" placeholder="Doe" name="lastName">
+                            <div class="signup__content-right">
+                                <div>
+                                    <label for="lastName">Last Name<span class="ast">*</span></label>
+                                    <input type="text"  id="lastName" placeholder="Doe" name="lastName" required>
+                                </div>
+                                <div>
+                                    <label for="phoneNumber">Phone Number</label>
+                                    <input type="tel"  id="phoneNumber" placeholder="555-555-555" name="phone_number">
+                                </div>
+                                <div>
+                                    <label for="confirmPassword">Confirm Password<span class="ast">*</span></label>
+                                    <input type="password"  id="confirmPassword" placeholder="confirm password" name="password" required>
+                                </div>
                             </div>
                         </div>
-                        <div class="signup__contact-info">
-                            <div>
-                                <label for="email">Email</label>
-                                <input type="email"  id="email" placeholder="example@domain.com" name="email">
-                            </div>
-                            <div>
-                                <label for="phoneNumber">Phone Number</label>
-                                <input type="number"  id="phoneNumber" placeholder="555-555-555" name="phone_number">
-                            </div>
-                        </div>
-                        <div class="signup__password">
-                            <div>
-                                <label for="password">Password</label>
-                                <input type="password"  id="password" placeholder="password" >
-                            </div>
-                            <div>
-                                <label for="confirmPassword">Confirm Password</label>
-                                <input type="password"  id="confirmPassword" placeholder="confirm password" name="password">
-                            </div>
-                        </div>
-                    <button type="submit" class="signup__button">Create Account</button>
-                    <p>Already have an account?</p><span><b>Log In</b></span>
+                    </div>
+                    <div class="signup__create">
+                        <button type="submit" class="signup__button">Create Account</button>
+                        <p>Already have an account?</p><span><button class="signup__login"><a href="">Log In</a></button></span>
+                    </div>
                 </form>
             </div>
         </div>
